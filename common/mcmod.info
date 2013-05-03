@@ -1,0 +1,21 @@
+[
+{
+  "modid": "AM",
+  "name": "Arcane Machinery",
+  "description": "Combine the arcane secrets of the past with the technology of the future!",
+  "version": "0.0.2",
+  "url": "www.github.com/Zyke-/ArcaneMachinery",
+  "updateUrl": "",
+  "authorList": [
+    "Zyke_"
+  ],
+  "credits": "Thanks to Pahimar for his inspiring Let's Mod series. 
+  			youtube.com/user/Pahimar",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
