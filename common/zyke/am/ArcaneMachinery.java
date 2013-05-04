@@ -76,7 +76,7 @@ public class ArcaneMachinery {
 		ItemGoldShears = new ItemGoldShears(5010, 1, tabAM, "itemGoldShears");
 		ItemOverheater = new ItemOverheater(5011, 1, tabAM, "itemOverheater");
 		ItemVoidWand = new ItemVoidWand(5012, 1, tabAM, "itemVoidWand");
-		//BlockElementalCompressorIdlen = new BlockElementalCompressor(501, tabAM, Material.rock, Block.soundStoneFootstep, 1.0F, "blockElementalCompressor");
+
 		BlockElementalCompressorIdle = new BlockElementalCompressor(500, false).setHardness(3.5F).setUnlocalizedName("Elemental Compressor Idle").setCreativeTab(tabAM);
 		BlockElementalCompressorBurning = new BlockElementalCompressor(501, true).setHardness(3.5F).setUnlocalizedName("Elemental Compressor Burning").setCreativeTab(tabAM);
 		

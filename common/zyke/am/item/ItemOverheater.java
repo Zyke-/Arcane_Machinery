@@ -15,6 +15,8 @@ public class ItemOverheater extends Item {
 		setMaxStackSize(maxStackSize);
 		setCreativeTab(tab);
 		setUnlocalizedName(name);
+		setHasSubtypes(false);
+		setMaxDamage(9);
 		textureName = name;
 	}
 		
@@ -24,14 +26,14 @@ public class ItemOverheater extends Item {
 		iconIndex = iconRegister.registerIcon("ArcaneMachinery:" + textureName);
 	}
 	
-	public boolean onItemUse(ItemStack itemStack, EntityPlayer entityPlayer, World world, int x, int y, int z) {
-		System.out.println("Somethig happened!");
-		if(!world.isRemote) {
-			if (world.getBlockId(x, y, z) == Block.obsidian.blockID) {
-				itemStack.damageItem(1, entityPlayer);
-				world.destroyBlock(x, y, z, true);
-			}
+	public boolean onItemUseFirst(ItemStack itemStack, EntityPlayer player, World world, int x, int y, int z, int side, float px, float py, float pz) {
+		int blockId = world.getBlockId(x, y, z);	
+		if (blockId == Block.obsidian.blockID) {
+			itemStack.damageItem(1, player);
+			world.setBlockToAir(x, y, z);
+			world.playSoundEffect((double)x + 0.5D, (double)y + 0.5D, (double)z + 0.5D, "random.fizz", 1.5F, world.rand.nextFloat() * 0.1F + 0.1F);
+			return !world.isRemote;
 		}
-		return true;
-    }
+		return false;
+	}
 }
