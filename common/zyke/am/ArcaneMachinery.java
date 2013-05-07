@@ -1,18 +1,13 @@
 package zyke.am;
 
-import zyke.am.block.BlockElementalCompressor;
+import zyke.am.block.*;
+import zyke.am.common.ArcaneMachineryPacketHandler;
+import zyke.am.common.GuiHandler;
+import zyke.am.item.*;
 import zyke.am.event.ArcaneMachineryDropsEvent;
-import zyke.am.item.ItemCompressedFood;
-import zyke.am.item.ItemGoldShears;
-import zyke.am.item.ItemHeatCondenser;
-import zyke.am.item.ItemNecroticHeart;
-import zyke.am.item.ItemOverheater;
-import zyke.am.item.ItemVoidWand;
 import zyke.am.lib.Reference;
 import zyke.am.proxy.CommonProxy;
 import zyke.am.tileentity.TileEntityElementalCompressor;
-import common.ArcaneMachineryPacketHandler;
-import common.GuiHandler;
 
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
